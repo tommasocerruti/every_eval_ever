@@ -1,0 +1,271 @@
+{
+  "schema_version": "0.2.2",
+  "evaluation_id": "arc-agi/openai/gpt-5-2-2025-12-11-thinking-xhigh/1774911689.1550531",
+  "retrieved_timestamp": "1774911689.1550531",
+  "source_metadata": {
+    "source_name": "ARC Prize leaderboard JSON",
+    "source_type": "documentation",
+    "source_organization_name": "ARC Prize",
+    "source_organization_url": "https://arcprize.org/leaderboard",
+    "evaluator_relationship": "third_party",
+    "additional_details": {
+      "api_endpoint": "https://arcprize.org/media/data/leaderboard/evaluations.json",
+      "filtered_to_display_true": "True"
+    }
+  },
+  "eval_library": {
+    "name": "ARC Prize leaderboard",
+    "version": "unknown"
+  },
+  "model_info": {
+    "name": "gpt-5-2-2025-12-11-thinking-xhigh",
+    "id": "openai/gpt-5-2-2025-12-11-thinking-xhigh",
+    "developer": "openai",
+    "additional_details": {
+      "raw_model_id": "gpt-5-2-2025-12-11-thinking-xhigh",
+      "raw_model_aliases_json": "[\"gpt-5-2-2025-12-11-thinking-xhigh\"]"
+    }
+  },
+  "evaluation_results": [
+    {
+      "evaluation_result_id": "v1_Public_Eval::score",
+      "evaluation_name": "v1_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.95,
+        "details": {
+          "datasetId": "v1_Public_Eval",
+          "costPerTask": "0.65",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "gpt-5-2-2025-12-11-thinking-xhigh",
+          "raw_model_aliases_json": "[\"gpt-5-2-2025-12-11-thinking-xhigh\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v1_Public_Eval::cost_per_task",
+      "evaluation_name": "v1_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 0.65,
+        "details": {
+          "datasetId": "v1_Public_Eval",
+          "score": "0.95",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "gpt-5-2-2025-12-11-thinking-xhigh",
+          "raw_model_aliases_json": "[\"gpt-5-2-2025-12-11-thinking-xhigh\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v1_Semi_Private::score",
+      "evaluation_name": "v1_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.8617,
+        "details": {
+          "datasetId": "v1_Semi_Private",
+          "costPerTask": "0.96",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "gpt-5-2-2025-12-11-thinking-xhigh",
+          "raw_model_aliases_json": "[\"gpt-5-2-2025-12-11-thinking-xhigh\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v1_Semi_Private::cost_per_task",
+      "evaluation_name": "v1_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 0.96,
+        "details": {
+          "datasetId": "v1_Semi_Private",
+          "score": "0.8617",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "gpt-5-2-2025-12-11-thinking-xhigh",
+          "raw_model_aliases_json": "[\"gpt-5-2-2025-12-11-thinking-xhigh\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Public_Eval::score",
+      "evaluation_name": "v2_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.5981,
+        "details": {
+          "datasetId": "v2_Public_Eval",
+          "costPerTask": "2.054",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "gpt-5-2-2025-12-11-thinking-xhigh",
+          "raw_model_aliases_json": "[\"gpt-5-2-2025-12-11-thinking-xhigh\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Public_Eval::cost_per_task",
+      "evaluation_name": "v2_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 2.054,
+        "details": {
+          "datasetId": "v2_Public_Eval",
+          "score": "0.5981",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "gpt-5-2-2025-12-11-thinking-xhigh",
+          "raw_model_aliases_json": "[\"gpt-5-2-2025-12-11-thinking-xhigh\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Semi_Private::score",
+      "evaluation_name": "v2_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.5291,
+        "details": {
+          "datasetId": "v2_Semi_Private",
+          "costPerTask": "1.8982",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "gpt-5-2-2025-12-11-thinking-xhigh",
+          "raw_model_aliases_json": "[\"gpt-5-2-2025-12-11-thinking-xhigh\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Semi_Private::cost_per_task",
+      "evaluation_name": "v2_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 1.8982,
+        "details": {
+          "datasetId": "v2_Semi_Private",
+          "score": "0.5291",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "gpt-5-2-2025-12-11-thinking-xhigh",
+          "raw_model_aliases_json": "[\"gpt-5-2-2025-12-11-thinking-xhigh\"]"
+        }
+      }
+    }
+  ]
+}

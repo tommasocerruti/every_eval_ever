@@ -1,0 +1,271 @@
+{
+  "schema_version": "0.2.2",
+  "evaluation_id": "arc-agi/community/icecuber/1774911689.130332",
+  "retrieved_timestamp": "1774911689.130332",
+  "source_metadata": {
+    "source_name": "ARC Prize leaderboard JSON",
+    "source_type": "documentation",
+    "source_organization_name": "ARC Prize",
+    "source_organization_url": "https://arcprize.org/leaderboard",
+    "evaluator_relationship": "third_party",
+    "additional_details": {
+      "api_endpoint": "https://arcprize.org/media/data/leaderboard/evaluations.json",
+      "filtered_to_display_true": "True"
+    }
+  },
+  "eval_library": {
+    "name": "ARC Prize leaderboard",
+    "version": "unknown"
+  },
+  "model_info": {
+    "name": "Icecuber",
+    "id": "community/icecuber",
+    "developer": "community",
+    "additional_details": {
+      "raw_model_id": "Icecuber",
+      "raw_model_aliases_json": "[\"Icecuber\"]"
+    }
+  },
+  "evaluation_results": [
+    {
+      "evaluation_result_id": "v1_Semi_Private::score",
+      "evaluation_name": "v1_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.17,
+        "details": {
+          "datasetId": "v1_Semi_Private",
+          "costPerTask": "0.2",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "Icecuber",
+          "raw_model_aliases_json": "[\"Icecuber\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v1_Semi_Private::cost_per_task",
+      "evaluation_name": "v1_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 0.2,
+        "details": {
+          "datasetId": "v1_Semi_Private",
+          "score": "0.17",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "Icecuber",
+          "raw_model_aliases_json": "[\"Icecuber\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Private_Eval::score",
+      "evaluation_name": "v2_Private_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.004,
+        "details": {
+          "datasetId": "v2_Private_Eval",
+          "costPerTask": "0.13",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "Icecuber",
+          "raw_model_aliases_json": "[\"Icecuber\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Private_Eval::cost_per_task",
+      "evaluation_name": "v2_Private_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 0.13,
+        "details": {
+          "datasetId": "v2_Private_Eval",
+          "score": "0.004",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "Icecuber",
+          "raw_model_aliases_json": "[\"Icecuber\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Public_Eval::score",
+      "evaluation_name": "v2_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.029,
+        "details": {
+          "datasetId": "v2_Public_Eval",
+          "costPerTask": "0.13",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "Icecuber",
+          "raw_model_aliases_json": "[\"Icecuber\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Public_Eval::cost_per_task",
+      "evaluation_name": "v2_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 0.13,
+        "details": {
+          "datasetId": "v2_Public_Eval",
+          "score": "0.029",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "Icecuber",
+          "raw_model_aliases_json": "[\"Icecuber\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Semi_Private::score",
+      "evaluation_name": "v2_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.016,
+        "details": {
+          "datasetId": "v2_Semi_Private",
+          "costPerTask": "0.13",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "Icecuber",
+          "raw_model_aliases_json": "[\"Icecuber\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Semi_Private::cost_per_task",
+      "evaluation_name": "v2_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 0.13,
+        "details": {
+          "datasetId": "v2_Semi_Private",
+          "score": "0.016",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "Icecuber",
+          "raw_model_aliases_json": "[\"Icecuber\"]"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "schema_version": "0.2.2",
+  "evaluation_id": "arc-agi/qwen/qwen3-235b-a22b-instruct-2507/1774911689.176681",
+  "retrieved_timestamp": "1774911689.176681",
+  "source_metadata": {
+    "source_name": "ARC Prize leaderboard JSON",
+    "source_type": "documentation",
+    "source_organization_name": "ARC Prize",
+    "source_organization_url": "https://arcprize.org/leaderboard",
+    "evaluator_relationship": "third_party",
+    "additional_details": {
+      "api_endpoint": "https://arcprize.org/media/data/leaderboard/evaluations.json",
+      "filtered_to_display_true": "True"
+    }
+  },
+  "eval_library": {
+    "name": "ARC Prize leaderboard",
+    "version": "unknown"
+  },
+  "model_info": {
+    "name": "qwen3-235b-a22b-instruct-2507",
+    "id": "qwen/qwen3-235b-a22b-instruct-2507",
+    "developer": "qwen",
+    "additional_details": {
+      "raw_model_id": "qwen3-235b-a22b-instruct-2507",
+      "raw_model_aliases_json": "[\"qwen3-235b-a22b-instruct-2507\"]"
+    }
+  },
+  "evaluation_results": [
+    {
+      "evaluation_result_id": "v1_Public_Eval::score",
+      "evaluation_name": "v1_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.17,
+        "details": {
+          "datasetId": "v1_Public_Eval",
+          "costPerTask": "0.0021",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "qwen3-235b-a22b-instruct-2507",
+          "raw_model_aliases_json": "[\"qwen3-235b-a22b-instruct-2507\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v1_Public_Eval::cost_per_task",
+      "evaluation_name": "v1_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 0.0021,
+        "details": {
+          "datasetId": "v1_Public_Eval",
+          "score": "0.17",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "qwen3-235b-a22b-instruct-2507",
+          "raw_model_aliases_json": "[\"qwen3-235b-a22b-instruct-2507\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v1_Semi_Private::score",
+      "evaluation_name": "v1_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.11,
+        "details": {
+          "datasetId": "v1_Semi_Private",
+          "costPerTask": "0.0025",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "qwen3-235b-a22b-instruct-2507",
+          "raw_model_aliases_json": "[\"qwen3-235b-a22b-instruct-2507\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v1_Semi_Private::cost_per_task",
+      "evaluation_name": "v1_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 0.0025,
+        "details": {
+          "datasetId": "v1_Semi_Private",
+          "score": "0.11",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "qwen3-235b-a22b-instruct-2507",
+          "raw_model_aliases_json": "[\"qwen3-235b-a22b-instruct-2507\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Public_Eval::score",
+      "evaluation_name": "v2_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.0083,
+        "details": {
+          "datasetId": "v2_Public_Eval",
+          "costPerTask": "0.0045",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "qwen3-235b-a22b-instruct-2507",
+          "raw_model_aliases_json": "[\"qwen3-235b-a22b-instruct-2507\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Public_Eval::cost_per_task",
+      "evaluation_name": "v2_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 0.0045,
+        "details": {
+          "datasetId": "v2_Public_Eval",
+          "score": "0.0083",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "qwen3-235b-a22b-instruct-2507",
+          "raw_model_aliases_json": "[\"qwen3-235b-a22b-instruct-2507\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Semi_Private::score",
+      "evaluation_name": "v2_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.0125,
+        "details": {
+          "datasetId": "v2_Semi_Private",
+          "costPerTask": "0.0044",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "qwen3-235b-a22b-instruct-2507",
+          "raw_model_aliases_json": "[\"qwen3-235b-a22b-instruct-2507\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Semi_Private::cost_per_task",
+      "evaluation_name": "v2_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 0.0044,
+        "details": {
+          "datasetId": "v2_Semi_Private",
+          "score": "0.0125",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "qwen3-235b-a22b-instruct-2507",
+          "raw_model_aliases_json": "[\"qwen3-235b-a22b-instruct-2507\"]"
+        }
+      }
+    }
+  ]
+}

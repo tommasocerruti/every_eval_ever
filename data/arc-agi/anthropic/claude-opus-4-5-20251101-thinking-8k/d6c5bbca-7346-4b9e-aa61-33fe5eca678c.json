@@ -1,0 +1,271 @@
+{
+  "schema_version": "0.2.2",
+  "evaluation_id": "arc-agi/anthropic/claude-opus-4-5-20251101-thinking-8k/1774911689.119972",
+  "retrieved_timestamp": "1774911689.119972",
+  "source_metadata": {
+    "source_name": "ARC Prize leaderboard JSON",
+    "source_type": "documentation",
+    "source_organization_name": "ARC Prize",
+    "source_organization_url": "https://arcprize.org/leaderboard",
+    "evaluator_relationship": "third_party",
+    "additional_details": {
+      "api_endpoint": "https://arcprize.org/media/data/leaderboard/evaluations.json",
+      "filtered_to_display_true": "True"
+    }
+  },
+  "eval_library": {
+    "name": "ARC Prize leaderboard",
+    "version": "unknown"
+  },
+  "model_info": {
+    "name": "claude-opus-4-5-20251101-thinking-8k",
+    "id": "anthropic/claude-opus-4-5-20251101-thinking-8k",
+    "developer": "anthropic",
+    "additional_details": {
+      "raw_model_id": "claude-opus-4-5-20251101-thinking-8k",
+      "raw_model_aliases_json": "[\"claude-opus-4-5-20251101-thinking-8k\"]"
+    }
+  },
+  "evaluation_results": [
+    {
+      "evaluation_result_id": "v1_Public_Eval::score",
+      "evaluation_name": "v1_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.701,
+        "details": {
+          "datasetId": "v1_Public_Eval",
+          "costPerTask": "0.34",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "claude-opus-4-5-20251101-thinking-8k",
+          "raw_model_aliases_json": "[\"claude-opus-4-5-20251101-thinking-8k\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v1_Public_Eval::cost_per_task",
+      "evaluation_name": "v1_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 0.34,
+        "details": {
+          "datasetId": "v1_Public_Eval",
+          "score": "0.701",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "claude-opus-4-5-20251101-thinking-8k",
+          "raw_model_aliases_json": "[\"claude-opus-4-5-20251101-thinking-8k\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v1_Semi_Private::score",
+      "evaluation_name": "v1_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.5867,
+        "details": {
+          "datasetId": "v1_Semi_Private",
+          "costPerTask": "0.38",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "claude-opus-4-5-20251101-thinking-8k",
+          "raw_model_aliases_json": "[\"claude-opus-4-5-20251101-thinking-8k\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v1_Semi_Private::cost_per_task",
+      "evaluation_name": "v1_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 0.38,
+        "details": {
+          "datasetId": "v1_Semi_Private",
+          "score": "0.5867",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "claude-opus-4-5-20251101-thinking-8k",
+          "raw_model_aliases_json": "[\"claude-opus-4-5-20251101-thinking-8k\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Public_Eval::score",
+      "evaluation_name": "v2_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.1042,
+        "details": {
+          "datasetId": "v2_Public_Eval",
+          "costPerTask": "0.49",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "claude-opus-4-5-20251101-thinking-8k",
+          "raw_model_aliases_json": "[\"claude-opus-4-5-20251101-thinking-8k\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Public_Eval::cost_per_task",
+      "evaluation_name": "v2_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 0.49,
+        "details": {
+          "datasetId": "v2_Public_Eval",
+          "score": "0.1042",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "claude-opus-4-5-20251101-thinking-8k",
+          "raw_model_aliases_json": "[\"claude-opus-4-5-20251101-thinking-8k\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Semi_Private::score",
+      "evaluation_name": "v2_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.1389,
+        "details": {
+          "datasetId": "v2_Semi_Private",
+          "costPerTask": "0.48",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "claude-opus-4-5-20251101-thinking-8k",
+          "raw_model_aliases_json": "[\"claude-opus-4-5-20251101-thinking-8k\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Semi_Private::cost_per_task",
+      "evaluation_name": "v2_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 0.48,
+        "details": {
+          "datasetId": "v2_Semi_Private",
+          "score": "0.1389",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "claude-opus-4-5-20251101-thinking-8k",
+          "raw_model_aliases_json": "[\"claude-opus-4-5-20251101-thinking-8k\"]"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "schema_version": "0.2.2",
+  "evaluation_id": "arc-agi/google/gemini-3-deep-think-022026/1774911689.140617",
+  "retrieved_timestamp": "1774911689.140617",
+  "source_metadata": {
+    "source_name": "ARC Prize leaderboard JSON",
+    "source_type": "documentation",
+    "source_organization_name": "ARC Prize",
+    "source_organization_url": "https://arcprize.org/leaderboard",
+    "evaluator_relationship": "third_party",
+    "additional_details": {
+      "api_endpoint": "https://arcprize.org/media/data/leaderboard/evaluations.json",
+      "filtered_to_display_true": "True"
+    }
+  },
+  "eval_library": {
+    "name": "ARC Prize leaderboard",
+    "version": "unknown"
+  },
+  "model_info": {
+    "name": "gemini_3_deep_think_022026",
+    "id": "google/gemini-3-deep-think-022026",
+    "developer": "google",
+    "additional_details": {
+      "raw_model_id": "gemini_3_deep_think_022026",
+      "raw_model_aliases_json": "[\"gemini_3_deep_think_022026\"]"
+    }
+  },
+  "evaluation_results": [
+    {
+      "evaluation_result_id": "v1_Semi_Private::score",
+      "evaluation_name": "v1_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.96,
+        "details": {
+          "datasetId": "v1_Semi_Private",
+          "costPerTask": "7.171",
+          "resultsUrl": "",
+          "display": "True",
+          "labelOffsetX": "-2",
+          "labelOffsetY": "-8",
+          "raw_model_id": "gemini_3_deep_think_022026",
+          "raw_model_aliases_json": "[\"gemini_3_deep_think_022026\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v1_Semi_Private::cost_per_task",
+      "evaluation_name": "v1_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 7.171,
+        "details": {
+          "datasetId": "v1_Semi_Private",
+          "score": "0.96",
+          "resultsUrl": "",
+          "display": "True",
+          "labelOffsetX": "-2",
+          "labelOffsetY": "-8",
+          "raw_model_id": "gemini_3_deep_think_022026",
+          "raw_model_aliases_json": "[\"gemini_3_deep_think_022026\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Semi_Private::score",
+      "evaluation_name": "v2_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.8458,
+        "details": {
+          "datasetId": "v2_Semi_Private",
+          "costPerTask": "13.6213",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "gemini_3_deep_think_022026",
+          "raw_model_aliases_json": "[\"gemini_3_deep_think_022026\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Semi_Private::cost_per_task",
+      "evaluation_name": "v2_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 13.6213,
+        "details": {
+          "datasetId": "v2_Semi_Private",
+          "score": "0.8458",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "gemini_3_deep_think_022026",
+          "raw_model_aliases_json": "[\"gemini_3_deep_think_022026\"]"
+        }
+      }
+    }
+  ]
+}

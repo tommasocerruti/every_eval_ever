@@ -1,0 +1,271 @@
+{
+  "schema_version": "0.2.2",
+  "evaluation_id": "arc-agi/xai/grok-4-fast-reasoning/1774911689.178935",
+  "retrieved_timestamp": "1774911689.178935",
+  "source_metadata": {
+    "source_name": "ARC Prize leaderboard JSON",
+    "source_type": "documentation",
+    "source_organization_name": "ARC Prize",
+    "source_organization_url": "https://arcprize.org/leaderboard",
+    "evaluator_relationship": "third_party",
+    "additional_details": {
+      "api_endpoint": "https://arcprize.org/media/data/leaderboard/evaluations.json",
+      "filtered_to_display_true": "True"
+    }
+  },
+  "eval_library": {
+    "name": "ARC Prize leaderboard",
+    "version": "unknown"
+  },
+  "model_info": {
+    "name": "grok-4-fast-reasoning",
+    "id": "xai/grok-4-fast-reasoning",
+    "developer": "xai",
+    "additional_details": {
+      "raw_model_id": "grok-4-fast-reasoning",
+      "raw_model_aliases_json": "[\"grok-4-fast-reasoning\"]"
+    }
+  },
+  "evaluation_results": [
+    {
+      "evaluation_result_id": "v1_Public_Eval::score",
+      "evaluation_name": "v1_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.5813,
+        "details": {
+          "datasetId": "v1_Public_Eval",
+          "costPerTask": "0.0278",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "grok-4-fast-reasoning",
+          "raw_model_aliases_json": "[\"grok-4-fast-reasoning\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v1_Public_Eval::cost_per_task",
+      "evaluation_name": "v1_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 0.0278,
+        "details": {
+          "datasetId": "v1_Public_Eval",
+          "score": "0.5813",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "grok-4-fast-reasoning",
+          "raw_model_aliases_json": "[\"grok-4-fast-reasoning\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v1_Semi_Private::score",
+      "evaluation_name": "v1_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.485,
+        "details": {
+          "datasetId": "v1_Semi_Private",
+          "costPerTask": "0.0307",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "grok-4-fast-reasoning",
+          "raw_model_aliases_json": "[\"grok-4-fast-reasoning\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v1_Semi_Private::cost_per_task",
+      "evaluation_name": "v1_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 0.0307,
+        "details": {
+          "datasetId": "v1_Semi_Private",
+          "score": "0.485",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "grok-4-fast-reasoning",
+          "raw_model_aliases_json": "[\"grok-4-fast-reasoning\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Public_Eval::score",
+      "evaluation_name": "v2_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.0458,
+        "details": {
+          "datasetId": "v2_Public_Eval",
+          "costPerTask": "0.0614",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "grok-4-fast-reasoning",
+          "raw_model_aliases_json": "[\"grok-4-fast-reasoning\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Public_Eval::cost_per_task",
+      "evaluation_name": "v2_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 0.0614,
+        "details": {
+          "datasetId": "v2_Public_Eval",
+          "score": "0.0458",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "grok-4-fast-reasoning",
+          "raw_model_aliases_json": "[\"grok-4-fast-reasoning\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Semi_Private::score",
+      "evaluation_name": "v2_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.0528,
+        "details": {
+          "datasetId": "v2_Semi_Private",
+          "costPerTask": "0.061",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "grok-4-fast-reasoning",
+          "raw_model_aliases_json": "[\"grok-4-fast-reasoning\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Semi_Private::cost_per_task",
+      "evaluation_name": "v2_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 0.061,
+        "details": {
+          "datasetId": "v2_Semi_Private",
+          "score": "0.0528",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "grok-4-fast-reasoning",
+          "raw_model_aliases_json": "[\"grok-4-fast-reasoning\"]"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "schema_version": "0.2.2",
+  "evaluation_id": "arc-agi/anthropic/claude-sonnet-4-6-high/1774911689.127979",
+  "retrieved_timestamp": "1774911689.127979",
+  "source_metadata": {
+    "source_name": "ARC Prize leaderboard JSON",
+    "source_type": "documentation",
+    "source_organization_name": "ARC Prize",
+    "source_organization_url": "https://arcprize.org/leaderboard",
+    "evaluator_relationship": "third_party",
+    "additional_details": {
+      "api_endpoint": "https://arcprize.org/media/data/leaderboard/evaluations.json",
+      "filtered_to_display_true": "True"
+    }
+  },
+  "eval_library": {
+    "name": "ARC Prize leaderboard",
+    "version": "unknown"
+  },
+  "model_info": {
+    "name": "claude_sonnet_4_6_high",
+    "id": "anthropic/claude-sonnet-4-6-high",
+    "developer": "anthropic",
+    "additional_details": {
+      "raw_model_id": "claude_sonnet_4_6_high",
+      "raw_model_aliases_json": "[\"claude_sonnet_4_6_high\"]"
+    }
+  },
+  "evaluation_results": [
+    {
+      "evaluation_result_id": "v1_Public_Eval::score",
+      "evaluation_name": "v1_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.9525,
+        "details": {
+          "datasetId": "v1_Public_Eval",
+          "costPerTask": "0.8007",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "claude_sonnet_4_6_high",
+          "raw_model_aliases_json": "[\"claude_sonnet_4_6_high\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v1_Public_Eval::cost_per_task",
+      "evaluation_name": "v1_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 0.8007,
+        "details": {
+          "datasetId": "v1_Public_Eval",
+          "score": "0.9525",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "claude_sonnet_4_6_high",
+          "raw_model_aliases_json": "[\"claude_sonnet_4_6_high\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v1_Semi_Private::score",
+      "evaluation_name": "v1_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.865,
+        "details": {
+          "datasetId": "v1_Semi_Private",
+          "costPerTask": "1.1908",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "claude_sonnet_4_6_high",
+          "raw_model_aliases_json": "[\"claude_sonnet_4_6_high\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v1_Semi_Private::cost_per_task",
+      "evaluation_name": "v1_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 1.1908,
+        "details": {
+          "datasetId": "v1_Semi_Private",
+          "score": "0.865",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "claude_sonnet_4_6_high",
+          "raw_model_aliases_json": "[\"claude_sonnet_4_6_high\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Public_Eval::score",
+      "evaluation_name": "v2_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.6569,
+        "details": {
+          "datasetId": "v2_Public_Eval",
+          "costPerTask": "2.985",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "claude_sonnet_4_6_high",
+          "raw_model_aliases_json": "[\"claude_sonnet_4_6_high\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Public_Eval::cost_per_task",
+      "evaluation_name": "v2_Public_Eval",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 2.985,
+        "details": {
+          "datasetId": "v2_Public_Eval",
+          "score": "0.6569",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "claude_sonnet_4_6_high",
+          "raw_model_aliases_json": "[\"claude_sonnet_4_6_high\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Semi_Private::score",
+      "evaluation_name": "v2_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "score",
+        "metric_name": "ARC score",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "score"
+        }
+      },
+      "score_details": {
+        "score": 0.6042,
+        "details": {
+          "datasetId": "v2_Semi_Private",
+          "costPerTask": "2.6966",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "claude_sonnet_4_6_high",
+          "raw_model_aliases_json": "[\"claude_sonnet_4_6_high\"]"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "v2_Semi_Private::cost_per_task",
+      "evaluation_name": "v2_Semi_Private",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "ARC Prize evaluations leaderboard JSON",
+        "url": [
+          "https://arcprize.org/media/data/leaderboard/evaluations.json"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_task",
+        "metric_name": "Cost per task",
+        "lower_is_better": true,
+        "additional_details": {
+          "raw_metric_field": "costPerTask"
+        }
+      },
+      "score_details": {
+        "score": 2.6966,
+        "details": {
+          "datasetId": "v2_Semi_Private",
+          "score": "0.6042",
+          "resultsUrl": "",
+          "display": "True",
+          "raw_model_id": "claude_sonnet_4_6_high",
+          "raw_model_aliases_json": "[\"claude_sonnet_4_6_high\"]"
+        }
+      }
+    }
+  ]
+}
