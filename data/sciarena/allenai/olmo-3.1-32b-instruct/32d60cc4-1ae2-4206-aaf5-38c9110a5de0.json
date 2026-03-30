@@ -1,7 +1,7 @@
 {
   "schema_version": "0.2.2",
-  "evaluation_id": "sciarena/google/gemini-2.5-flash/1774902488.283644",
-  "retrieved_timestamp": "1774902488.283644",
+  "evaluation_id": "sciarena/allenai/olmo-3.1-32b-instruct/1774904873.231731",
+  "retrieved_timestamp": "1774904873.231731",
   "source_metadata": {
     "source_name": "SciArena leaderboard API",
     "source_type": "documentation",
@@ -17,11 +17,11 @@
     "version": "unknown"
   },
   "model_info": {
-    "name": "Gemini-2.5-Flash",
-    "id": "google/gemini-2.5-flash",
-    "developer": "google",
+    "name": "Olmo-3.1-32B-Instruct",
+    "id": "allenai/olmo-3.1-32b-instruct",
+    "developer": "allenai",
     "additional_details": {
-      "raw_model_id": "Gemini-2.5-Flash"
+      "raw_model_id": "Olmo-3.1-32B-Instruct"
     }
   },
   "evaluation_results": [
@@ -44,11 +44,12 @@
         }
       },
       "score_details": {
-        "score": 965.9602361107354,
+        "score": 963.5932586246543,
         "details": {
-          "num_battles": "1472",
-          "rating_q025": "950.4808663142911",
-          "rating_q975": "981.4827422816211"
+          "num_battles": "128",
+          "rating_q025": "914.1216427410296",
+          "rating_q975": "1009.1314289102336",
+          "variance": "None"
         }
       }
     },
@@ -68,7 +69,7 @@
         "lower_is_better": true
       },
       "score_details": {
-        "score": 28.0
+        "score": 29.0
       }
     },
     {
@@ -87,7 +88,7 @@
         "lower_is_better": true
       },
       "score_details": {
-        "score": 0.7081
+        "score": 0.17
       }
     }
   ]

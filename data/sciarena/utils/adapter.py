@@ -7,13 +7,47 @@ import time
 import uuid
 from pathlib import Path
 
-MODEL_ID_MAP = {
-    "o3": ("openai", "o3"),
-    "Claude-4.1-Opus": ("anthropic", "claude-4.1-opus"),
-    "GPT-5": ("openai", "gpt-5"),
-    "Claude-4-Opus": ("anthropic", "claude-4-opus"),
-    "Gemini-2.5-Pro": ("google", "gemini-2.5-pro"),
-    "Gemini-2.5-Flash": ("google", "gemini-2.5-flash"),
+# Conservative provider mapping.
+# Keep the source alias in raw_model_id and derive a simple lowercase model slug.
+PROVIDER_MAP = {
+    "o3": "openai",
+    "Claude-4.1-Opus": "anthropic",
+    "GPT-5": "openai",
+    "Gemini-3-Pro-Preview": "google",
+    "GPT-5.1": "openai",
+    "Claude-4-Opus": "anthropic",
+    "GPT-5-mini": "openai",
+    "Gemini-2.5-Pro": "google",
+    "Grok-4": "xai",
+    "Deepseek-R1-0528": "deepseek",
+    "GPT-OSS-120B": "openai",
+    "Qwen3-235B-A22B-Thinking-2507": "qwen",
+    "o4-mini": "openai",
+    "Claude-4-Sonnet": "anthropic",
+    "Qwen3-235B-A22B-2507": "qwen",
+    "GPT-4.1": "openai",
+    "GPT-4.1-mini": "openai",
+    "Qwen3-30B-A3B-Instruct-2507": "qwen",
+    "Gemini-2.5-Pro-Preview": "google",
+    "GLM-4.5": "zhipu",
+    "Deepseek-R1": "deepseek",
+    "Deepseek-V3": "deepseek",
+    "Qwen3-235B-A22B": "qwen",
+    "Kimi-K2": "moonshotai",
+    "Grok-3": "xai",
+    "QwQ-32B": "qwen",
+    "Claude-3-7-Sonnet": "anthropic",
+    "Gemini-2.5-Flash": "google",
+    "Olmo-3.1-32B-Instruct": "allenai",
+    "Qwen3-32B": "qwen",
+    "Gemini-2.5-Flash-Preview": "google",
+    "GPT-OSS-20B": "openai",
+    "GPT-5-nano": "openai",
+    "Mistral-Small-3.1": "mistralai",
+    "Mistral-Medium-3": "mistralai",
+    "Minimax-M1": "minimax",
+    "Llama-4-Maverick": "meta",
+    "Llama-4-Scout": "meta",
 }
 
 SOURCE_URL = "https://sciarena.allen.ai/api/leaderboard"
@@ -31,13 +65,20 @@ def load_rows(input_json: Path) -> list[dict]:
     return json.loads(input_json.read_text(encoding="utf-8"))
 
 
+def slugify_model_name(raw_model_id: str) -> str:
+    # Keep close to source aliases. Lowercase, preserve dots and hyphens.
+    return raw_model_id.strip().lower()
+
+
 def normalize_model(raw_model_id: str) -> tuple[str, str]:
-    if raw_model_id not in MODEL_ID_MAP:
+    if raw_model_id not in PROVIDER_MAP:
         raise KeyError(
-            f"No canonical mapping for modelId={raw_model_id!r}. "
-            "Add it to MODEL_ID_MAP before scaling further."
+            f"No provider mapping for modelId={raw_model_id!r}. "
+            "Add it to PROVIDER_MAP before exporting."
         )
-    return MODEL_ID_MAP[raw_model_id]
+    developer_name = PROVIDER_MAP[raw_model_id]
+    model_name = slugify_model_name(raw_model_id)
+    return developer_name, model_name
 
 
 def make_results(row: dict) -> list[dict]:
@@ -62,6 +103,7 @@ def make_results(row: dict) -> list[dict]:
                     "num_battles": str(row["num_battles"]),
                     "rating_q025": str(row["rating_q025"]),
                     "rating_q975": str(row["rating_q975"]),
+                    "variance": str(row["variance"]),
                 },
             },
         }
@@ -156,28 +198,16 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input-json", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
-    parser.add_argument(
-        "--model",
-        type=str,
-        default=None,
-        help="Exact SciArena modelId to export. If omitted, export all mapped models.",
-    )
     args = parser.parse_args()
 
     rows = load_rows(args.input_json)
 
-    if args.model is not None:
-        matches = [row for row in rows if row["modelId"] == args.model]
-        if not matches:
-            raise SystemExit(f"Model {args.model!r} not found in {args.input_json}")
-        print(export_one(matches[0], args.output_dir))
-        return
+    missing = [row["modelId"] for row in rows if row["modelId"] not in PROVIDER_MAP]
+    if missing:
+        raise SystemExit(f"Missing provider mappings for: {missing}")
 
     exported = 0
     for row in rows:
-        raw_model_id = row["modelId"]
-        if raw_model_id not in MODEL_ID_MAP:
-            continue
         out_path = export_one(row, args.output_dir)
         print(out_path)
         exported += 1

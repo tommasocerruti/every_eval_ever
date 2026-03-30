@@ -1,7 +1,7 @@
 {
   "schema_version": "0.2.2",
-  "evaluation_id": "sciarena/openai/o3/1774902488.281949",
-  "retrieved_timestamp": "1774902488.281949",
+  "evaluation_id": "sciarena/google/gemini-2.5-pro-preview/1774904873.229203",
+  "retrieved_timestamp": "1774904873.229203",
   "source_metadata": {
     "source_name": "SciArena leaderboard API",
     "source_type": "documentation",
@@ -17,11 +17,11 @@
     "version": "unknown"
   },
   "model_info": {
-    "name": "o3",
-    "id": "openai/o3",
-    "developer": "openai",
+    "name": "Gemini-2.5-Pro-Preview",
+    "id": "google/gemini-2.5-pro-preview",
+    "developer": "google",
     "additional_details": {
-      "raw_model_id": "o3"
+      "raw_model_id": "Gemini-2.5-Pro-Preview"
     }
   },
   "evaluation_results": [
@@ -44,11 +44,12 @@
         }
       },
       "score_details": {
-        "score": 1151.3779287263492,
+        "score": 1009.6882693653926,
         "details": {
-          "num_battles": "1076",
-          "rating_q025": "1127.1508457746786",
-          "rating_q975": "1174.3957832775193"
+          "num_battles": "1044",
+          "rating_q025": "990.2447593449193",
+          "rating_q975": "1032.4624425176853",
+          "variance": "None"
         }
       }
     },
@@ -68,7 +69,7 @@
         "lower_is_better": true
       },
       "score_details": {
-        "score": 1.0
+        "score": 19.0
       }
     },
     {
@@ -87,7 +88,7 @@
         "lower_is_better": true
       },
       "score_details": {
-        "score": 3.5438
+        "score": 2.9302
       }
     }
   ]

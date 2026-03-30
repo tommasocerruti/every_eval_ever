@@ -1,7 +1,7 @@
 {
   "schema_version": "0.2.2",
-  "evaluation_id": "sciarena/anthropic/claude-4-opus/1774902488.283123",
-  "retrieved_timestamp": "1774902488.283123",
+  "evaluation_id": "sciarena/meta/llama-4-scout/1774904873.234089",
+  "retrieved_timestamp": "1774904873.234089",
   "source_metadata": {
     "source_name": "SciArena leaderboard API",
     "source_type": "documentation",
@@ -17,11 +17,11 @@
     "version": "unknown"
   },
   "model_info": {
-    "name": "Claude-4-Opus",
-    "id": "anthropic/claude-4-opus",
-    "developer": "anthropic",
+    "name": "Llama-4-Scout",
+    "id": "meta/llama-4-scout",
+    "developer": "meta",
     "additional_details": {
-      "raw_model_id": "Claude-4-Opus"
+      "raw_model_id": "Llama-4-Scout"
     }
   },
   "evaluation_results": [
@@ -44,11 +44,12 @@
         }
       },
       "score_details": {
-        "score": 1071.7486973245118,
+        "score": 829.7737302958208,
         "details": {
-          "num_battles": "1403",
-          "rating_q025": "1054.4818424482155",
-          "rating_q975": "1094.0012620766615"
+          "num_battles": "2112",
+          "rating_q025": "815.0842412312433",
+          "rating_q975": "844.754349995399",
+          "variance": "None"
         }
       }
     },
@@ -68,7 +69,7 @@
         "lower_is_better": true
       },
       "score_details": {
-        "score": 6.0
+        "score": 38.0
       }
     },
     {
@@ -87,7 +88,7 @@
         "lower_is_better": true
       },
       "score_details": {
-        "score": 28.4471
+        "score": 0.1082
       }
     }
   ]
