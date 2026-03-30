@@ -1,0 +1,94 @@
+{
+  "schema_version": "0.2.2",
+  "evaluation_id": "sciarena/anthropic/claude-4.1-opus/1774902488.282496",
+  "retrieved_timestamp": "1774902488.282496",
+  "source_metadata": {
+    "source_name": "SciArena leaderboard API",
+    "source_type": "documentation",
+    "source_organization_name": "Ai2",
+    "source_organization_url": "https://sciarena.allen.ai",
+    "evaluator_relationship": "third_party",
+    "additional_details": {
+      "api_endpoint": "https://sciarena.allen.ai/api/leaderboard"
+    }
+  },
+  "eval_library": {
+    "name": "SciArena",
+    "version": "unknown"
+  },
+  "model_info": {
+    "name": "Claude-4.1-Opus",
+    "id": "anthropic/claude-4.1-opus",
+    "developer": "anthropic",
+    "additional_details": {
+      "raw_model_id": "Claude-4.1-Opus"
+    }
+  },
+  "evaluation_results": [
+    {
+      "evaluation_result_id": "overall::elo",
+      "evaluation_name": "overall",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "SciArena leaderboard API",
+        "url": [
+          "https://sciarena.allen.ai/api/leaderboard"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "elo",
+        "metric_name": "Elo rating",
+        "lower_is_better": false,
+        "additional_details": {
+          "raw_metric_field": "rating"
+        }
+      },
+      "score_details": {
+        "score": 1126.3532524689376,
+        "details": {
+          "num_battles": "341",
+          "rating_q025": "1098.9556194029617",
+          "rating_q975": "1154.837547542123"
+        }
+      }
+    },
+    {
+      "evaluation_result_id": "overall::rank",
+      "evaluation_name": "overall",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "SciArena leaderboard API",
+        "url": [
+          "https://sciarena.allen.ai/api/leaderboard"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "rank",
+        "metric_name": "Rank",
+        "lower_is_better": true
+      },
+      "score_details": {
+        "score": 2.0
+      }
+    },
+    {
+      "evaluation_result_id": "overall::cost_per_100_calls_usd",
+      "evaluation_name": "overall",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "SciArena leaderboard API",
+        "url": [
+          "https://sciarena.allen.ai/api/leaderboard"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "cost_per_100_calls_usd",
+        "metric_name": "Cost per 100 calls",
+        "lower_is_better": true
+      },
+      "score_details": {
+        "score": 28.648
+      }
+    }
+  ]
+}
