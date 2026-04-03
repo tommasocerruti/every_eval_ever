@@ -1,0 +1,845 @@
+{
+  "schema_version": "0.2.2",
+  "evaluation_id": "bfcl/salesforce/xlam-2-1b-fc-r-fc/1775236112.399987",
+  "retrieved_timestamp": "1775236112.399987",
+  "source_metadata": {
+    "source_name": "BFCL leaderboard CSV",
+    "source_type": "documentation",
+    "source_organization_name": "UC Berkeley Gorilla",
+    "source_organization_url": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+    "evaluator_relationship": "third_party",
+    "additional_details": {
+      "csv_url": "https://gorilla.cs.berkeley.edu/data_overall.csv",
+      "leaderboard_url": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+      "leaderboard_version": "BFCL V4"
+    }
+  },
+  "eval_library": {
+    "name": "BFCL",
+    "version": "v4"
+  },
+  "model_info": {
+    "name": "xLAM-2-1b-fc-r (FC)",
+    "id": "salesforce/xlam-2-1b-fc-r-fc",
+    "developer": "salesforce",
+    "additional_details": {
+      "raw_model_name": "xLAM-2-1b-fc-r (FC)",
+      "organization": "Salesforce",
+      "license": "cc-by-nc-4.0",
+      "mode": "FC",
+      "model_link": "https://huggingface.co/Salesforce/xLAM-2-1b-fc-r"
+    }
+  },
+  "evaluation_results": [
+    {
+      "evaluation_result_id": "bfcl.overall.rank::rank",
+      "evaluation_name": "bfcl.overall.rank",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.overall.rank",
+        "metric_name": "Overall rank",
+        "metric_kind": "rank",
+        "metric_unit": "position",
+        "lower_is_better": true,
+        "score_type": "continuous",
+        "min_score": 1.0,
+        "max_score": 109.0,
+        "additional_details": {
+          "raw_metric_field": "Rank"
+        }
+      },
+      "score_details": {
+        "score": 65.0
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.overall.overall_accuracy::overall_accuracy",
+      "evaluation_name": "bfcl.overall.overall_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.overall.overall_accuracy",
+        "metric_name": "Overall accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Overall Acc"
+        }
+      },
+      "score_details": {
+        "score": 30.44
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.overall.total_cost_usd::total_cost_usd",
+      "evaluation_name": "bfcl.overall.total_cost_usd",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.overall.total_cost_usd",
+        "metric_name": "Total cost",
+        "metric_kind": "cost",
+        "metric_unit": "usd",
+        "lower_is_better": true,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 355.17,
+        "additional_details": {
+          "raw_metric_field": "Total Cost ($)"
+        }
+      },
+      "score_details": {
+        "score": 2.79
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.overall.latency_mean_s::latency_mean_s",
+      "evaluation_name": "bfcl.overall.latency_mean_s",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.overall.latency_mean_s",
+        "metric_name": "Latency mean",
+        "metric_kind": "latency",
+        "metric_unit": "seconds",
+        "lower_is_better": true,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 169.87,
+        "additional_details": {
+          "raw_metric_field": "Latency Mean (s)"
+        }
+      },
+      "score_details": {
+        "score": 2.84
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.overall.latency_std_s::latency_std_s",
+      "evaluation_name": "bfcl.overall.latency_std_s",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.overall.latency_std_s",
+        "metric_name": "Latency standard deviation",
+        "metric_kind": "latency",
+        "metric_unit": "seconds",
+        "lower_is_better": true,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 212.99,
+        "additional_details": {
+          "raw_metric_field": "Latency Standard Deviation (s)"
+        }
+      },
+      "score_details": {
+        "score": 2.35
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.overall.latency_p95_s::latency_p95_s",
+      "evaluation_name": "bfcl.overall.latency_p95_s",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.overall.latency_p95_s",
+        "metric_name": "Latency 95th percentile",
+        "metric_kind": "latency",
+        "metric_unit": "seconds",
+        "lower_is_better": true,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 568.59,
+        "additional_details": {
+          "raw_metric_field": "Latency 95th Percentile (s)"
+        }
+      },
+      "score_details": {
+        "score": 6.52
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.non_live.ast_accuracy::ast_accuracy",
+      "evaluation_name": "bfcl.non_live.ast_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.non_live.ast_accuracy",
+        "metric_name": "Non-live AST accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Non-Live AST Acc"
+        }
+      },
+      "score_details": {
+        "score": 69.04
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.non_live.simple_ast_accuracy::simple_ast_accuracy",
+      "evaluation_name": "bfcl.non_live.simple_ast_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.non_live.simple_ast_accuracy",
+        "metric_name": "Non-live simple AST accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Non-Live Simple AST"
+        }
+      },
+      "score_details": {
+        "score": 64.17
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.non_live.multiple_ast_accuracy::multiple_ast_accuracy",
+      "evaluation_name": "bfcl.non_live.multiple_ast_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.non_live.multiple_ast_accuracy",
+        "metric_name": "Non-live multiple AST accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Non-Live Multiple AST"
+        }
+      },
+      "score_details": {
+        "score": 82.5
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.non_live.parallel_ast_accuracy::parallel_ast_accuracy",
+      "evaluation_name": "bfcl.non_live.parallel_ast_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.non_live.parallel_ast_accuracy",
+        "metric_name": "Non-live parallel AST accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Non-Live Parallel AST"
+        }
+      },
+      "score_details": {
+        "score": 73.5
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.non_live.parallel_multiple_ast_accuracy::parallel_multiple_ast_accuracy",
+      "evaluation_name": "bfcl.non_live.parallel_multiple_ast_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.non_live.parallel_multiple_ast_accuracy",
+        "metric_name": "Non-live parallel multiple AST accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Non-Live Parallel Multiple AST"
+        }
+      },
+      "score_details": {
+        "score": 56.0
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.live.live_accuracy::live_accuracy",
+      "evaluation_name": "bfcl.live.live_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.live.live_accuracy",
+        "metric_name": "Live accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Live Acc"
+        }
+      },
+      "score_details": {
+        "score": 55.14
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.live.live_simple_ast_accuracy::live_simple_ast_accuracy",
+      "evaluation_name": "bfcl.live.live_simple_ast_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.live.live_simple_ast_accuracy",
+        "metric_name": "Live simple AST accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Live Simple AST"
+        }
+      },
+      "score_details": {
+        "score": 68.22
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.live.live_multiple_ast_accuracy::live_multiple_ast_accuracy",
+      "evaluation_name": "bfcl.live.live_multiple_ast_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.live.live_multiple_ast_accuracy",
+        "metric_name": "Live multiple AST accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Live Multiple AST"
+        }
+      },
+      "score_details": {
+        "score": 52.8
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.live.live_parallel_ast_accuracy::live_parallel_ast_accuracy",
+      "evaluation_name": "bfcl.live.live_parallel_ast_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.live.live_parallel_ast_accuracy",
+        "metric_name": "Live parallel AST accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Live Parallel AST"
+        }
+      },
+      "score_details": {
+        "score": 43.75
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.live.live_parallel_multiple_ast_accuracy::live_parallel_multiple_ast_accuracy",
+      "evaluation_name": "bfcl.live.live_parallel_multiple_ast_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.live.live_parallel_multiple_ast_accuracy",
+        "metric_name": "Live parallel multiple AST accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Live Parallel Multiple AST"
+        }
+      },
+      "score_details": {
+        "score": 25.0
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.multi_turn.accuracy::accuracy",
+      "evaluation_name": "bfcl.multi_turn.accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.multi_turn.accuracy",
+        "metric_name": "Multi-turn accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Multi Turn Acc"
+        }
+      },
+      "score_details": {
+        "score": 36.0
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.multi_turn.base_accuracy::base_accuracy",
+      "evaluation_name": "bfcl.multi_turn.base_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.multi_turn.base_accuracy",
+        "metric_name": "Multi-turn base accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Multi Turn Base"
+        }
+      },
+      "score_details": {
+        "score": 45.5
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.multi_turn.miss_function_accuracy::miss_function_accuracy",
+      "evaluation_name": "bfcl.multi_turn.miss_function_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.multi_turn.miss_function_accuracy",
+        "metric_name": "Multi-turn missing function accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Multi Turn Miss Func"
+        }
+      },
+      "score_details": {
+        "score": 36.0
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.multi_turn.miss_parameter_accuracy::miss_parameter_accuracy",
+      "evaluation_name": "bfcl.multi_turn.miss_parameter_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.multi_turn.miss_parameter_accuracy",
+        "metric_name": "Multi-turn missing parameter accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Multi Turn Miss Param"
+        }
+      },
+      "score_details": {
+        "score": 37.0
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.multi_turn.long_context_accuracy::long_context_accuracy",
+      "evaluation_name": "bfcl.multi_turn.long_context_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.multi_turn.long_context_accuracy",
+        "metric_name": "Multi-turn long-context accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Multi Turn Long Context"
+        }
+      },
+      "score_details": {
+        "score": 25.5
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.web_search.accuracy::accuracy",
+      "evaluation_name": "bfcl.web_search.accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.web_search.accuracy",
+        "metric_name": "Web-search accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Web Search Acc"
+        }
+      },
+      "score_details": {
+        "score": 0.0
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.web_search.base_accuracy::base_accuracy",
+      "evaluation_name": "bfcl.web_search.base_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.web_search.base_accuracy",
+        "metric_name": "Web-search base accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Web Search Base"
+        }
+      },
+      "score_details": {
+        "score": 0.0
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.web_search.no_snippet_accuracy::no_snippet_accuracy",
+      "evaluation_name": "bfcl.web_search.no_snippet_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.web_search.no_snippet_accuracy",
+        "metric_name": "Web-search no-snippet accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Web Search No Snippet"
+        }
+      },
+      "score_details": {
+        "score": 0.0
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.memory.accuracy::accuracy",
+      "evaluation_name": "bfcl.memory.accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.memory.accuracy",
+        "metric_name": "Memory accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Memory Acc"
+        }
+      },
+      "score_details": {
+        "score": 3.87
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.memory.kv_accuracy::kv_accuracy",
+      "evaluation_name": "bfcl.memory.kv_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.memory.kv_accuracy",
+        "metric_name": "Memory KV accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Memory KV"
+        }
+      },
+      "score_details": {
+        "score": 3.87
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.memory.vector_accuracy::vector_accuracy",
+      "evaluation_name": "bfcl.memory.vector_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.memory.vector_accuracy",
+        "metric_name": "Memory vector accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Memory Vector"
+        }
+      },
+      "score_details": {
+        "score": 3.87
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.memory.recursive_summarization_accuracy::recursive_summarization_accuracy",
+      "evaluation_name": "bfcl.memory.recursive_summarization_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.memory.recursive_summarization_accuracy",
+        "metric_name": "Memory recursive summarization accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Memory Recursive Summarization"
+        }
+      },
+      "score_details": {
+        "score": 3.87
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.relevance.relevance_detection_accuracy::relevance_detection_accuracy",
+      "evaluation_name": "bfcl.relevance.relevance_detection_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.relevance.relevance_detection_accuracy",
+        "metric_name": "Relevance detection accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Relevance Detection"
+        }
+      },
+      "score_details": {
+        "score": 87.5
+      }
+    },
+    {
+      "evaluation_result_id": "bfcl.relevance.irrelevance_detection_accuracy::irrelevance_detection_accuracy",
+      "evaluation_name": "bfcl.relevance.irrelevance_detection_accuracy",
+      "source_data": {
+        "source_type": "url",
+        "dataset_name": "BFCL leaderboard CSV",
+        "url": [
+          "https://gorilla.cs.berkeley.edu/data_overall.csv"
+        ]
+      },
+      "metric_config": {
+        "metric_id": "bfcl.relevance.irrelevance_detection_accuracy",
+        "metric_name": "Irrelevance detection accuracy",
+        "metric_kind": "accuracy",
+        "metric_unit": "percentage",
+        "lower_is_better": false,
+        "score_type": "continuous",
+        "min_score": 0.0,
+        "max_score": 100.0,
+        "additional_details": {
+          "raw_metric_field": "Irrelevance Detection"
+        }
+      },
+      "score_details": {
+        "score": 64.47
+      }
+    }
+  ]
+}
